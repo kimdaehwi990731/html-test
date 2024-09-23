@@ -1,0 +1,130 @@
+/* modal default */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10vh auto;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 90vw;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+/* image-grid */
+.images-container {
+    display: flex;
+    width: 100%;
+    height: 35vh;
+}
+.main-image {
+    width: 50%;
+    height: 100%;
+    padding-right: 5px;
+    overflow: hidden;
+}
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small-images {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.small-images-ele1,
+.small-images-ele2 {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.small-images-ele1 img,
+.small-images-ele2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small-images-ele2 {
+    padding-top: 5px;
+}
+
+/* 병원 이름 및 병원 종류 */
+.hospital-name {
+    display: flex;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.hospital-sort {
+    margin-left: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #A1A1A1;
+}
+
+/* tabs */
+.tabs {
+    display: flex;
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.tab-image {
+    transition: opacity 0.3s;
+}
+#depart-icon:hover .tab-image {
+    content: url("../images/출발-hover.svg");
+}
+#arrive-icon:hover .tab-image {
+    content: url("../images/도착-hover.svg");
+}
+#share-icon:hover .tab-image {
+    content: url("../images/공유-hover.svg");
+}
+
+/* tabs-info-picture */
+.tabs-info-picture {
+    display: flex;
+}
+.tabs-info-picture .tab {
+    border-bottom: 2px solid #A1A1A1;
+}
+.tabs-info-picture .active {
+    color: #FFD700;
+    border-bottom: 5px solid #FFD700;
+}
+.tabs-info-picture .tab:hover {
+    color: #FFD700;
+}
+
+/* info */
+.info {
+    padding: 30px;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.info-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

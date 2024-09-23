@@ -1,0 +1,125 @@
+/* font */
+/* title : 런드리 고딕체 */
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* content : Pretendard 체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* default */
+body {
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 3vh;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-brand-name {
+    width: 40vw;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #FFCC00;
+    font-family: 'TTLaundryGothicB';
+}
+
+.header-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.header-icons img:hover {
+    transform: scale(1.05);
+}
+#header-search-icon {
+    margin-right: 10px;
+}
+
+/* main */
+main {
+    width: 100vw;
+    height: calc(100vh - 5vh - 7vh);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    background-color: white;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: #f8f8f8;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .icon {
+    text-align: center;
+    flex: 1;
+}
+
+footer .icon img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+footer .icon label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+footer .page-button {
+    position: absolute;
+    top: -30px;
+    background-color: #FFCC00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer .page-button img {
+    width: 30px;
+    height: 30px;
+}

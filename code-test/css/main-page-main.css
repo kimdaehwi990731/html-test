@@ -1,0 +1,334 @@
+/* font */
+/* title : 런드리 고딕체 */
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* content : Pretendard 체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* default */
+body {
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 3vh;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-brand-name {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s;
+}
+
+.header-icons img:hover {
+    transform: scale(1.05);
+}
+#header-search-icon {
+    margin-right: 10px;
+}
+
+/* main */
+main {
+    width: 100vw;
+    height: calc(100vh - 5vh - 7vh);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: #f8f8f8;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .icon {
+    text-align: center;
+    flex: 1;
+}
+
+footer .icon img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+footer .icon label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+footer .page-button {
+    position: absolute;
+    top: -30px;
+    background-color: #FFCC00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer .page-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* details */
+.section {
+    padding: 20px;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+.section-title img {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.bookmark-group {
+    display: flex;
+    justify-content: space-between;
+}
+.bookmark {
+    background-color: #FFF5CF;
+    border-radius: 20px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.bookmark-img {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.bookmark-title {
+    font-size: 15px;
+    color: #FFCC00;
+    font-weight: bold;
+    text-align: center;
+}
+.bookmark-content {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.bookmark-content p {
+    font-size: 13px;
+    color: #FFCC00;
+    font-weight: normal;
+    text-align: left;
+}
+
+.banner {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.current-info-items {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+.current-info-item {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.current-location {
+    width: 12%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+}
+.current-location p {
+    text-align: center;
+    text-wrap: wrap;
+}
+.current-location-info {
+    width: 88%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-location-info p {
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.tip-section {
+    padding: 20px;
+    background-color: #F4F4F4;
+    display: flex;
+}
+.tip {
+    flex: 1;
+    padding: 10px;
+}
+.tip-item {
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.tip-welcome {
+    font-weight: normal;
+    font-size: 10px;
+    color: gray;
+}
+.tip-title {
+    font-weight: bold;
+}
+.tip-item img {
+    width: 100%;
+    height: 125px;
+    padding-top: 10px;
+}
+
+.section-title a {
+    margin-left: 35px;
+    font-size: 10px;
+    color: gray;
+}
+
+button {
+    font-family: 'Pretendard-Regular';
+    color: gray;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    font-weight: bold;
+}
+.checked {
+    background-color: #FFCC00;
+    color: black;
+}
+
+.funding-items {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 6vh;
+}
+.funding-item-section {
+    flex: 1;
+    padding: 10px;
+}
+.funding-item {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.funding-top1 {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('../images/backgroundImg1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.funding-title {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+.funding-content {
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+.funding-bottom {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    color: black;
+    font-size: 10px;
+}
+.funding-detail-content {
+    margin-top: 5px;
+    color: gray;
+}
+.funding-top2 {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('../images/backgroundImg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>템플릿 테스트</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/location-info-modal.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-brand-name">
+            마음이음
+        </div>
+        <div class="header-icons">
+            <img id="header-search-icon" name="header-search-icon" src="../images/search-icon.svg" alt="search-icon">
+            <img id="header-menu-icon" name="header-menu-icon" src="../images/menu-icon.svg" alt="menu-icon">
+        </div>
+    </header>
+
+    <main style="background-color: beige; height: 95vh;">
+
+        <button id="openModal">모달 열기</button>
+
+        <div id="location-info-modal" class="modal">
+            <div class="modal-content">
+
+                <div class="images-container">
+                    <div class="main-image">
+                        <img src="../images/병원 예시 이미지 1.jpg" alt="병원 예시 이미지 1">
+                    </div>
+                    <div class="small-images">
+                        <div class="small-images-ele1">
+                            <img src="../images/병원 예시 이미지 2.jpg" alt="병원 예시 이미지 2">
+                        </div>
+                        <div class="small-images-ele2">
+                            <img src="../images/병원 예시 이미지 3.jpg" alt="병원 예시 이미지 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hospital-name">
+                    A 종합병원
+                    <div class="hospital-sort">
+                        종합병원
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab" id="depart-icon">
+                        <img src="../images/출발.svg" alt="출발" class="tab-image">
+                    </div>
+                    <div class="tab" id="arrive-icon">
+                        <img src="../images/도착.svg" alt="도착" class="tab-image">
+                    </div>
+                    <div class="tab" id="book-icon">
+                        <img src="../images/저장.svg" alt="저장" class="tab-image">
+                    </div>
+                    <div class="tab" id="share-icon">
+                        <img src="../images/공유.svg" alt="공유" class="tab-image">
+                    </div>
+                </div>
+                
+                <div class="tabs-info-picture">
+                    <div class="tab active">정보</div>
+                    <div class="tab">사진</div>
+                </div>
+                
+                <div class="info">
+                    <div class="info-item">
+                        <img src="../images/장소위치.svg" alt="Location icon">
+                        <span>경기 수원시 영통구 법조로 25 광교SK뷰파크 A 종합병원</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="../images/인근역.svg" alt="Distance icon">
+                        <span>광교중앙역 5번 출구에서 311m</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="../images/전화번호.svg" alt="Phone icon">
+                        <span>0000-1234-1234</span>
+                    </div>
+                    <div class="info-item">
+                        <img src="../images/웹사이트.svg" alt="Website icon">
+                        <span>https://www.A_Hospital.net</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="icon">
+            <img src="../images/home-icon.svg" alt="홈">
+            <label>홈</label>
+        </div>
+        <div class="icon">
+            <img src="../images/counsel-icon.svg" alt="비대면 상담">
+            <label>비대면 상담</label>
+        </div>
+        <div class="call-button">
+            <img src="../images/call-icon.svg" alt="전화">
+        </div>
+        <div class="icon">
+            <img src="../images/diary-icon.svg" alt="일기">
+            <label>일기</label>
+        </div>
+        <div class="icon">
+            <img src="../images/my-icon.svg" alt="내 정보">
+            <label>내 정보</label>
+        </div>
+    </footer>
+
+    <script src="../js/location-info-modal.js"></script>
+</body>
+</html>

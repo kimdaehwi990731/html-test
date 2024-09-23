@@ -1,0 +1,157 @@
+/* back-tab */
+.back-tab {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.back-tab img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* select-vehicle */
+.select-vehicle {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+#traffic:hover .tab-image {
+    content: url("../images/대중교통-hover.svg");
+}
+#car:hover .tab-image {
+    content: url("../images/자동차-hover.svg");
+}
+#walk:hover .tab-image {
+    content: url("../images/도보-hover.svg");
+}
+#bike:hover .tab-image {
+    content: url("../images/자전거-hover.svg");
+}
+
+/* searching-box */
+.searching-box {
+    width: 100%;
+    height: 17vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searching-depart {
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.searching-arrive {
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.searching-box img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+.searching-box input {
+    width: 75%;
+    height: 35px;
+    resize: none;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+.searching-box input::placeholder {
+    color: gray;
+}
+
+.searching-box #changeDeAr {
+    position: absolute;
+    display: flex;
+    top: calc(10vh + 3vh + 8vh + 4.5vh);
+    right:  9vw;
+}
+
+.finding {
+    width: 100%;
+    height: 4.5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.finding img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+/* finding-result-items */
+.finding-result-items {
+    width: 100%;
+    overflow-y: auto;
+    max-height: calc(80vh - (3vh + 8vh + 17vh));
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.finding-result-item {
+    width: 90%;
+    height: 15vh;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.finding-result-item img {
+    width: 50px;
+    display: none;
+}
+
+.takingTime {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+}
+.go-h {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: bold;
+}
+.go-h p {
+    margin-left: 3px;
+    font-size: 15px;
+}
+.go-m {
+    width: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: bold;
+}
+.go-m p {
+    margin-left: 3px;
+    font-size: 15px;
+}
