@@ -1,0 +1,14 @@
+.images-box {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(150px, 190px));
+    gap: 8px;
+}
+
+.images-box img {
+    width: 100%;
+    height: auto;
+}
