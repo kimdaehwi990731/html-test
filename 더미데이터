@@ -1,0 +1,107 @@
+    // api 할당량 끝났을 때용 dummy 데이터 다 쓰면 transitData 에서 dummy로
+    // const dummyTransitData = [
+    //     {
+    //         totalTime: 6000,
+    //         fare: {
+    //             regular: {
+    //                 totalFare: 1650,
+    //             },
+    //         },
+    //         legs: [
+    //             {
+    //                 mode: 'WALK',
+    //                 sectionTime: 120,
+    //                 start: {
+    //                     name: '출발지',
+    //                 },
+    //                 end: {
+    //                     name: '서울역',
+    //                 },
+    //             },
+    //             {
+    //                 mode: 'SUBWAY',
+    //                 sectionTime: 1800,
+    //                 start: {
+    //                     name: '서울역',
+    //                 },
+    //                 end: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 route: '수도권4호선',
+    //             },
+    //             {
+    //                 mode: 'WALK',
+    //                 sectionTime: 300, // 도보 시간 (초)
+    //                 start: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 end: {
+    //                     name: '(임시)정부과천청사역6번출구',
+    //                 },
+    //             },
+    //             {
+    //                 mode: 'BUS',
+    //                 sectionTime: 300, // 도보 시간 (초)
+    //                 start: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 end: {
+    //                     name: '(임시)정부과천청사역6번출구',
+    //                 },
+    //                 route: "일반:7",
+    //             },
+    //         ],
+    //     },
+    //     {
+    //         totalTime: 4600,
+    //         fare: {
+    //             regular: {
+    //                 totalFare: 1650,
+    //             },
+    //         },
+    //         legs: [
+    //             {
+    //                 mode: 'WALK',
+    //                 sectionTime: 120,
+    //                 start: {
+    //                     name: '출발지',
+    //                 },
+    //                 end: {
+    //                     name: '서울역',
+    //                 },
+    //             },
+    //             {
+    //                 mode: 'SUBWAY',
+    //                 sectionTime: 1800,
+    //                 start: {
+    //                     name: '서울역',
+    //                 },
+    //                 end: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 route: '수도권4호선',
+    //             },
+    //             {
+    //                 mode: 'WALK',
+    //                 sectionTime: 300,
+    //                 start: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 end: {
+    //                     name: '(임시)정부과천청사역6번출구',
+    //                 },
+    //             },
+    //             {
+    //                 mode: 'BUS',
+    //                 sectionTime: 300, // 도보 시간 (초)
+    //                 start: {
+    //                     name: '정부과천청사',
+    //                 },
+    //                 end: {
+    //                     name: '(임시)정부과천청사역6번출구',
+    //                 },
+    //                 route: "일반:7",
+    //             },
+    //         ],
+    //     },
+    // ];
